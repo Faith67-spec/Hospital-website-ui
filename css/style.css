@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #020617;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.banner {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(120deg, #0ea5e9, #0369a1);
+    animation: fadeIn 2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.cta-button, .cta-button-large {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #10b981;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover, .cta-button-large:hover {
+    background: #059669;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.cta-button-large {
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 60px 40px;
+    background: #020617;
+    text-align: center;
+}
+
+.highlight-item {
+    padding: 20px;
+}
+
+.highlight-number {
+    font-size: 36px;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+.featured-services {
+    padding: 60px 40px;
+}
+
+.featured-services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #38bdf8;
+}
+
+.featured-services .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+.card-icon-text {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.testimonials {
+    padding: 60px 40px;
+    background: #0f172a;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #38bdf8;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    background: #020617;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    font-style: italic;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.testimonial strong {
+    color: #38bdf8;
+    font-style: normal;
+}
+
+.cta-section {
+    padding: 80px 40px;
+    background: linear-gradient(120deg, #0ea5e9, #0369a1);
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 1px solid #0ea5e9;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}
+
+.card-icon {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card h4 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 13px;
+}
+
+.card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #0f172a;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.form-section {
+    padding: 40px;
+}
+
+form input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 8px;
+        border-bottom: 1px solid #0369a1;
+    }
+
+    .banner {
+        padding: 60px 15px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .highlights {
+        padding: 40px 20px;
+        gap: 15px;
+    }
+
+    .featured-services {
+        padding: 40px 15px;
+    }
+
+    .featured-services h2,
+    .testimonials h2 {
+        font-size: 24px;
+    }
+
+    .featured-services .cards,
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-section {
+        padding: 40px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    form input, textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
