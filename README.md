@@ -25,6 +25,9 @@ A clean and interactive e-commerce interface optimized for all screen sizes.
 - Hover effects for better UX  
 - Mobile-friendly design  
 
+## 🌍 Live Demo
+https://Faith67-spec.github.io/Hospital-website-ui/
+
 ## 🛠️ Technologies Used
 - HTML5  
 - CSS3  
@@ -62,4 +65,4 @@ git clone https://github.com/Faith67-spec/Hospital-website-ui
 Feel free to connect with me on LinkedIn for feedback or collaboration!
 
 ## ⭐ Support
-If you like this project, don’t forget to give it a ⭐ on GitHub!
+If you like this project, don't forget to give it a ⭐ on GitHub!
